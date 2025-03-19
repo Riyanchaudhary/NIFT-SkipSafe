@@ -1,0 +1,18 @@
+
+{
+    "manifest_version": 3,
+    "name": "Aryabadmos",
+    "version": "1.0",
+    "description": "Calculate subject-wise attendance on NIFT CMS and get feedback on skippable classes",
+    "permissions": ["activeTab", "scripting"],
+    "host_permissions": ["https://www.cmsnift.com/pages/curriculum2018_stud_forms/stud_attendance_ver2_subjectwise.aspx"],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://www.cmsnift.com/pages/curriculum2018_stud_forms/stud_attendance_ver2_subjectwise.aspx"],
+        "js": ["content.js"]
+      }
+    ]
+  }

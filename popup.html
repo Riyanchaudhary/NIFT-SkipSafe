@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Aryabadmos - NIFT Attendance Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      width: 300px;
+      padding: 10px;
+    }
+    h1 {
+      font-size: 16px;
+      color: #333;
+    }
+    .info {
+      font-size: 14px;
+      line-height: 1.5;
+      margin-bottom: 15px;
+    }
+    .button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 8px 16px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Aryabadmos - NIFT Attendance Calculator</h1>
+  <div class="info">
+    <p>This extension calculates subject-wise attendance for NIFT CMS and provides feedback on how many classes can be skipped while maintaining minimum attendance.</p>
+    <p>Subjects with attendance below 75% will be highlighted in red.</p>
+  </div>
+  <button id="calculate-btn" class="button">Calculate Attendance</button>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
